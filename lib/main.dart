@@ -21,7 +21,18 @@ class Uygulamam extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.indigo.shade300,
         ),
-        body: Image.asset('assets/images/terabithiaremote1.png'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Merhaba'),
+              SizedBox(height: 50),
+              Text('Merhaba2'),
+              SizedBox(height: 50),
+              Image.asset('assets/images/terabithiaremote1.png', width: 200),
+            ],
+          ),
+        ),
       ),
     );
   }
