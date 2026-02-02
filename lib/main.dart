@@ -25,11 +25,30 @@ class Uygulamam extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Merhaba'),
-              SizedBox(height: 50),
-              Text('Merhaba2'),
-              SizedBox(height: 50),
-              Image.asset('assets/images/terabithiaremote1.png', width: 200),
+              ElevatedButton(
+                onPressed: () => print('Bana Tıkladın'),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.indigo),
+                child: Text(
+                  'Bana Tıkla',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.amber,
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text('Bana Tıkla'),
+                style: TextButton.styleFrom(backgroundColor: Colors.amber),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.red,
+                  size: 40,
+                ),
+              ),
             ],
           ),
         ),
