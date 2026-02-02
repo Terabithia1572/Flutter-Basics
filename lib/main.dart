@@ -12,6 +12,7 @@ class Uygulamam extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Nunito"),
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(
             'Uygulamam',
@@ -20,7 +21,7 @@ class Uygulamam extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.indigo.shade300,
         ),
-        body: Text('Merhaba'),
+        body: Image.asset('assets/images/terabithiaremote1.png'),
       ),
     );
   }
