@@ -21,7 +21,7 @@ class CustomCardView extends StatelessWidget {
           ),
         ],
       ),
-      child: Text('Ruwis', style: const TextStyle(fontSize: 24)),
+      child: Text('Ruwis2', style: const TextStyle(fontSize: 24)),
     );
   }
 }
