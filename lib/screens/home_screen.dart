@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ornek_proje/screens/second_screen.dart';
-
-import '../custom_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,27 +6,28 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text(
-          'Uygulamam',
-          style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.indigo.shade300,
-      ),
+      backgroundColor: Color(0XFF191919),
+
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomCardView(),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()),
-                );
-              },
-              child: Text('İkinci Ekrana Git..'),
+            Stack(
+              children: [
+                Image.asset('assets/images/zikirmatik.png', width: 300),
+                Positioned(
+                  top: 46,
+                  right: 80,
+                  child: Text(
+                    '50',
+                    style: TextStyle(
+                      fontFamily: 'Digital7',
+                      fontSize: 50,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
