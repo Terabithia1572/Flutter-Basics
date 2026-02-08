@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ornek_proje/screens/home_screen3.dart';
+import 'package:ornek_proje/screens/home_screen4.dart';
 
 void main() {
   runApp(const Uygulamam());
@@ -13,7 +13,7 @@ class Uygulamam extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "Nunito"),
-      home: HomeScreen3(),
+      home: HomeScreen4(),
     );
   }
 }
